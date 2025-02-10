@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Contactos - VW GTI</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #000;
+            background: #e70606;
+        }
+
+        * {
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #container {
+            width: 800px;
+            background-color: #fff;
+            background-repeat: repeat-y;
+        }
+
+        #links a {
+            font-size: 26px;
+            font-weight: bold;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #1652B4;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #1652B4;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+
+        #links a:hover {
+            color: #ff0909;
+        }
+
+        #links a:hover::after {
+            width: 100%;
+        }
+
+        #links a:hover {
+            border-bottom: dotted 1px #1652B4;
+        }
+
+         #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #111;
+        }
+        }
+
+        .logo {
+            margin-top: 15px;
+            margin-left: 10px;
+            float: left;
+            height: 160px;
+        }
+
+        .contenttext {
+            padding: 15px 35px;
+            text-align: center;
+        }
+
+        .contenttext h2 {
+            color: #0000ff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .form-container form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #1652B4;
+            border-radius: 8px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #1652B4;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #ff0909;
+        }
+
+        #footer {
+            font-size: 12px;
+            color: #519FEE;
+            margin-top: 18px;
+            width: 750px;
+            text-align: center;
+        }
+
+        #footer a, #footer a:visited {
+            text-align: center;
+            color: #ADCCF1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/gti.png" alt="Logo VW GTI"/>
+            <div id="links">
+                <a href="index.html">Início</a>
+                <a href="História.html">História</a>
+                <a href="Modelos.html">Modelos</a>
+                <a href="Modificações.html">Modificações</a>
+            </div>
+        </div>
+
+        <div class="contenttext">
+            <h2>Contacte-nos</h2>
+            <p>Se tiver alguma dúvida ou quiser saber mais sobre os nossos serviços, não hesite em entrar em contacto connosco. Estamos à sua disposição!</p>
+        </div>
+
+        <div class="form-container">
+            <h3>Formulário de Contato</h3>
+            <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="contenttext">
+            <h3>Outras Formas de Contato</h3>
+            <p>Também pode entrar em contacto através dos seguintes meios:</p>
+            <ul>
+                <li>📞 Telefone: (123) 456-7890</li>
+                <li>📧 E-mail: <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a></li>
+                <li>🔗 Redes Sociais:
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <a href="#">Website realizado por Pedro Almeida</a>
+        </div>
+    </div>
+</body>
+</html>

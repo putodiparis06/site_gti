@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Modificações - VW GTI</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #000;
+            background: #e70606;
+        }
+
+        * {
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #container {
+            width: 800px;
+            background-color: #fff;
+            background-repeat: repeat-y;
+        }
+
+        #links a {
+            font-size: 26px;
+            font-weight: bold;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #1652B4;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #1652B4;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+
+        #links a:hover {
+            color: #ff0909;
+        }
+
+        #links a:hover::after {
+            width: 100%;
+        }
+
+        #links a:hover {
+            border-bottom: dotted 1px #1652B4;
+        }
+
+         #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #111;
+        }
+        }
+
+        .logo {
+            margin-top: 15px;
+            margin-left: 10px;
+            float: left;
+            height: 160px;
+        }
+
+        .contenttext {
+            padding: 15px 35px;
+            text-align: center;
+        }
+
+        .contenttext h2 {
+            color: #0000ff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .modificacao {
+            margin-bottom: 30px;
+        }
+
+        .modificacao img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modificacao h3 {
+            color: #ff0909;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .form {
+            margin: 20px 0 0 150px;
+            padding-bottom: 50px;
+            line-height: 150%;
+        }
+
+        #footer {
+            font-size: 12px;
+            color: #519FEE;
+            margin-top: 18px;
+            width: 750px;
+            text-align: center;
+        }
+
+        #footer a, #footer a:visited {
+            text-align: center;
+            color: #ADCCF1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/gti.png" alt="Logo VW GTI"/>
+            <div id="links">
+                <a href="index.html">Início</a>
+                <a href="História.html">História</a>
+                <a href="Modelos.html">Modelos</a>
+                <a href="Contactos.html">Contactos</a>
+            </div>
+        </div>
+
+        <div class="contenttext">
+            <h2>Modificações no Volkswagen GTI</h2>
+            <p>O Volkswagen GTI é um carro lendário que oferece um desempenho incrível de fábrica, mas muitos entusiastas adoram personalizá-lo para torná-lo ainda mais único. Aqui estão algumas das modificações mais populares para o GTI:</p>
+        </div>
+
+        <!-- Seção de Modificações -->
+        <div class="modificacao">
+            <h3>1. Modificação do Motor</h3>
+            <img src="images/motor.webp" alt="Modificação do Motor do GTI"/>
+            <p>Uma das modificações mais procuradas é a alteração do motor. Muitos donos de GTI optam por aumentar a potência com chip tuning, turbocompressores maiores ou kits de performance.</p>
+        </div>
+
+        <div class="modificacao">
+            <h3>2. Suspensão Esportiva</h3>
+            <img src="images/suspensão.jfif" alt="Suspensão esportiva GTI"/>
+            <p>Melhorar a suspensão do GTI pode resultar em uma direção mais firme e esportiva. Muitos escolhem molas esportivas ou kits de suspensão a ar para ajustar a altura do carro e melhorar a estabilidade.</p>
+        </div>
+
+        <div class="modificacao">
+            <h3>3. Sistema de Escape</h3>
+            <img src="images/escape.jfif" alt="Sistema de Escape GTI"/>
+            <p>Uma modificação popular é o sistema de escape, que pode melhorar o desempenho e dar ao GTI um som mais esportivo. Existem várias opções de escapamentos de alto desempenho para aumentar a eficiência do motor.</p>
+        </div>
+
+        <div class="modificacao">
+            <h3>4. Rodas e Pneus</h3>
+            <img src="images/pneus.jpg" alt="Rodas personalizadas GTI"/>
+            <p>A troca das rodas pode alterar completamente a aparência do seu GTI. Rodas maiores ou com designs exclusivos podem melhorar a estética do carro, além de contribuir para a performance.</p>
+        </div>
+
+        <div class="modificacao">
+            <h3>5. Personalização Estética</h3>
+            <img src="images/estetica.jpg" alt="Personalização estética GTI"/>
+            <p>As modificações estéticas incluem adesivos, pinturas personalizadas, spoilers e modificações na parte externa para dar um visual único ao seu GTI.</p>
+        </div>
+
+        <div id="footer">
+            <a href="#">Website realizado por Pedro Almeida</a>
+        </div>
+    </div>
+</body>
+</html>

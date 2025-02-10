@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>VW_GTI</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #000;
+            background: #e70606;
+        }
+
+        * {
+            margin: 0 auto 0 auto;
+            text-align: left;
+        }
+
+        #container {
+            width: 800px;
+            background-color: #fff;
+            background-repeat: repeat-y;
+        }
+
+        #links a {
+            font-size: 26px;
+            font-weight: bold;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #1652B4;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #1652B4;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+
+        #links a:hover {
+            color: #ff0909; 
+        }
+
+        #links a:hover::after {
+            width: 100%;
+        }
+
+        #links a:hover {
+            border-bottom: dotted 1px #1652B4;
+        }
+
+         #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #111;
+        }
+        }
+
+        .logo {
+            margin-top: 15px;
+            margin-left: 10px;
+            float: left;
+            height: 160px;
+        }
+
+        .video {
+            width: 500px;
+            left: 50%;
+        }
+
+        .picture {}
+
+        .contenttext {
+            padding: 15px 35px;
+            text-align: center;
+        }
+
+        .contenttext h2 {
+            color: #0000ff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .form {
+            margin: 20px 0 0 150px;
+            padding-bottom: 50px;
+            line-height: 150%;
+        }
+
+        .form h2 {
+            color: #00ffff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        #footer {
+            font-size: 12px;
+            color: #519FEE;
+            margin-top: 18px;
+            width: 750px;
+            text-align: center;
+        }
+
+        #footer a, #footer a:visited {
+            text-align: center;
+            color: #ADCCF1;
+            text-decoration: none;
+        }
+
+        /* Adicionando o flexbox para alinhar as imagens */
+        .modelos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .modelo {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            max-width: 150px;
+        }
+
+        .modelo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ano {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/gti.png"/>
+            <div id="links">
+                <a href="index.html">Início</a>
+                <a href="História.html">História</a>
+                <a href="Modificações.html">Modificações</a>
+                <a href="Contactos.html">Contactos</a>
+            </div>
+        </div>
+        
+        <section>
+            <h2>Modelos Icônicos do GTI</h2>
+            <div class="modelos">
+                <div class="modelo">
+                    <img src="images/mk1.png.png" alt="Volkswagen Golf GTI Mk1">
+                    <p class="ano">Volkswagen Golf GTI Mk1 (1975)</p>
+                </div>
+                <div class="modelo">
+                    <img src="images/mk2.png" alt="Volkswagen Golf GTI Mk2">
+                    <p class="ano">Volkswagen Golf GTI Mk2 (1984)</p>
+                </div>
+                <div class="modelo">
+                    <img src="images/mk3.jpg" alt="Volkswagen Golf GTI Mk3">
+                    <p class="ano">Volkswagen Golf GTI Mk3 (1991)</p>
+                </div>
+                <div class="modelo">
+                    <img src="images/mk4.jpg" alt="Volkswagen Golf GTI Mk4">
+                    <p class="ano">Volkswagen Golf GTI Mk4 (1997)</p>
+                </div>
+                <div class="modelo">
+                    <img src="images/mk7.jfif" alt="Volkswagen Golf GTI Mk7">
+                    <p class="ano">Volkswagen Golf GTI Mk7 (2012)</p>
+                </div>
+				<div class="modelo">
+                    <img src="images/mk7.5.webp" alt="Volkswagen Golf GTI Mk7">
+                    <p class="ano">Volkswagen Golf GTI Mk7.5 (2017)</p>
+                </div>
+				<div class="modelo">
+                    <img src="images/mk8.jpg" alt="Volkswagen Golf GTI Mk7">
+                    <p class="ano">Volkswagen Golf GTI Mk8 (2020)</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="https://www.car.blog.br/2020/05/volkswagen-golf-gti-historia-das-8.html" target="_blank">Clique aqui <span>&#x25BC;</span></a>
+
+        <div id="footer">
+            <a href="#">Website realizado por Pedro Almeida</a>
+        </div>
+    </div>
+</body>
+</html>

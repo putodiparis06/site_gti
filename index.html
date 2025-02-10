@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>VW_GTI</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #fff;
+            background: #e70606;
+            text-align: center;
+        }
+
+        #container {
+            width: 900px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #111;
+        }
+
+        .logo {
+            height: 100px;
+        }
+
+        #links a {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #links a:hover {
+            color: #e70606;
+        }
+
+        picture img {
+            width: 100%;
+            border-bottom: 5px solid #e70606;
+        }
+
+        .contenttext {
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contenttext h2 {
+            color: #e70606;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contenttext li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .contenttext a {
+            display: inline-block;
+            background: #e70606;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .contenttext a:hover {
+            background: #c10505;
+        }
+
+        #footer {
+            font-size: 14px;
+            color: #fff;
+            padding: 15px;
+            background: #111;
+        }
+
+        #footer a {
+            color: #e70606;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/gti.png"/>
+            <div id="links">
+                <a href="História.html">História</a>
+                <a href="Modelos.html">Modelos</a>
+                <a href="Modificações.html">Modificações</a>
+                <a href="Contactos.html">Contactos</a>
+            </div>
+        </div>
+
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/gti30.webp">
+            <source media="(min-width: 768px)" srcset="images/gti20.webp">
+            <source media="(min-width: 576px)" srcset="images/gti10.webp">
+            <img src="images/gti_1.png">
+        </picture>
+
+        <div class="contenttext">
+            <h2>Bem-vindo ao Mundo GTI</h2>
+            <p>O Volkswagen GTI é mais do que apenas um carro – é um ícone da performance e da emoção ao volante.</p>
+            <ul>
+                <li>✅ História do GTI – Desde o primeiro modelo em 1976 até às versões modernas.</li>
+                <li>✅ Tecnologia e Performance – Motores, suspensão e inovações que fazem a diferença.</li>
+                <li>✅ Galeria de Imagens – Vê de perto os detalhes marcantes do GTI.</li>
+                <li>✅ Contato e Serviços – Fala connosco e descobre como personalizar o teu GTI.</li>
+            </ul>
+            <a href="https://youtu.be/XXQkOrBO6y4" target="_blank">Ver Vídeo 🚗💨</a>
+        </div>
+
+        <div id="footer"> <a href="#">Website realizado por Pedro Almeida</a> </div>
+    </div>
+</body>
+</html>
